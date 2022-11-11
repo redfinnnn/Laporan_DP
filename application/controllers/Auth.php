@@ -27,7 +27,7 @@ class Auth extends CI_Controller {
         
         if ($this->form_validation->run() == TRUE) 
         {
-            $user = $this->M_auth->get_email($this->input->post('email'));
+            $user = $this->M_auth->get_user($this->input->post('username'));
             if(!$user){
                 $this->session->set_flashdata('message', '<div class="alert alert-danger">Username atau Password salah</div>');
                 redirect('auth/login','refresh');
@@ -37,7 +37,7 @@ class Auth extends CI_Controller {
             
             else if (!password_verify($this->input->post('password'), $user->password)) 
             {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger">Password yang anda masukan salah</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger">Username atau Password salah</div>');
                 redirect('auth/login','refresh');
             }
             else if($user->level_user== 0 ) //level_user=0 adalah admin
