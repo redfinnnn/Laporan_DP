@@ -3,6 +3,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Chart extends CI_Controller {
+
+    public function __construct()
+    {
+        parent::__construct();
+        cek_login();
+    }
+
     public function index()
     {
         $data['jumlah_cash']=$this->M_pembayaran->jumlah_cash();

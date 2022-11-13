@@ -22,12 +22,15 @@
                         <input type="hidden" name="ori_email" class="form-control" placeholder="ori_Email" value="<?=$user->email?>">
                         <input type="hidden" name="ori_username" class="form-control" placeholder="ori_username" value="<?=$user->username?>">
                             
+                            <label for="">Username : </label>
                             <div class="input-group mb-3">
                                 <input type="text" name="username" class="form-control" placeholder="Username" value="<?=$user->username?>">
                             </div>
+                            <label for="">Email : </label>
                             <div class="input-group mb-3">
                                 <input type="text" name="email" class="form-control" placeholder="Email" value="<?=$user->email?>">                               
                             </div>
+                            <label for="">Level user : </label>
                             <div class="input-group mb-3">
                                 <select name="level" class="form-control">
                                     <option value="0" <?= $user->level_user == '0' ? 'selected' : null ?>>Admin</option>

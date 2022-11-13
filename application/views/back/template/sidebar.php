@@ -45,7 +45,7 @@
               </p>
             </a>
           </li> -->
-        
+          <?php if(is_admin()){ ?>
           <li class="nav-item has-treeview">
             <a href="<?= base_url('user') ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
@@ -53,9 +53,8 @@
                 Data User
               </p>
             </a>
-          
-          
           </li>
+          <?php } ?>
           <li class="nav-item has-treeview">
             <a href="<?= base_url('pembayaran') ?>" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
@@ -79,7 +78,7 @@
 
           <li class="nav-header">PROFIL</li>
           <li class="nav-item has-treeview">
-            <a href="<?= base_url('karyawan/profile/' . $this->session->id_user); ?>" class="nav-link">
+            <a href="<?= base_url('user/profile/' . $this->session->id_user); ?>" class="nav-link">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
                 Profil user
