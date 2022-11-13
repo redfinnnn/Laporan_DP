@@ -57,7 +57,7 @@
           
           </li>
           <li class="nav-item has-treeview">
-            <a href="<?= base_url('tiket') ?>" class="nav-link">
+            <a href="<?= base_url('pembayaran') ?>" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Data Pembayaran
@@ -68,7 +68,7 @@
           <li class="nav-header">LAPORAN</li>
         
           <li class="nav-item has-treeview">
-            <a href="<?= base_url('user') ?>" class="nav-link">
+            <a href="<?= base_url('chart') ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Diagram pembayaran

@@ -56,8 +56,8 @@
                                                 <a onclick="return confirm('apakah anda yakin akan menghapus User <?= $row->username; ?>?');" href="<?= base_url('user/delete_user/' . $row->id_user) ?>" class="btn btn-danger btn-sm">
                                                     <i class="fa fa-trash"></i><?php } ?>
                                                 </a>
-                                                <?php } ?>
                                             </td>
+                                            <?php } ?>
 
 
                                         </tr>
